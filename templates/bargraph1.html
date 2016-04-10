@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Bar Graph</title>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+</head>
+<style>
+
+.bar.positive {
+  fill: blue;
+}
+
+.bar.negative {
+  fill: green;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
+</style>
+<body align = "center">
+    <h3>Earthquake Graph for June 2015</h3>
+    <script type ="text/javascript" src="/static/bargraph1.js"></script>
+</body>
+</html>

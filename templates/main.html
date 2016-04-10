@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 8</title>
+  </head>
+  <body align ="center">
+      <h3>Assignment 8</h3>
+      <h4>Select one button</h4>
+      <form action="/scatter" method="post">
+        <input type = "submit" value="Get Scatter plots">
+      </form>
+      <br>
+      <br>
+      <form action="/cluster" method="post">
+        Select number of clusters for K-means:
+         <select name = "cluster">
+        {% for c in clusterNo%}
+             <option>{{c}}</option>
+          {% endfor %}
+        </select>
+        <br>
+        <input type = "submit" value="K-means Clustering">
+      </form>
+      <br>
+      <br>
+      <form action="/bargraph" method="post">
+        <input type = "submit" value="Flower Bar Graph">
+      </form>
+      <br>
+      <br>
+      <form action="/bargraph1" method="post">
+        <input type = "submit" value="Earthquake Bar Graph">
+      </form>
+  </body>
+</html>
